@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>www.valves.com</title>
+    <link rel="stylesheet" href="./css/land.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <img class="img" src="./img'/Screenshot (13).png" /><br />
+      <a class="admin" href="#"><strong>ADMIN</strong></a
+      ><br />
+      <a href="#"><i class="fa fa-address-book"></i> Dashboard</a>
+      <a href="#"><i class="fa fa-book" aria-hidden="true"></i> Record</a>
+      <a href="#"
+        ><i class="fa fa-table" aria-hidden="true"></i> Modify Record</a
+      >
+      <a href="#"
+        ><i class="fa fa-newspaper-o" aria-hidden="true"></i> Reports</a
+      >
+      <a href="#"
+        ><i class="fa fa-user-plus" aria-hidden="true"></i> User Management</a
+      >
+      <a href="#"
+        ><i class="fa fa-key" aria-hidden="true"></i> Reset Password</a
+      >
+      <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div class="header-1">
+      <img class="header" src="./img'/Screenshot (13).png" />
+    </div>
+    <h2 class="daily">Value <span class="credit">Credit</span> Update for SMEs</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>QUANTITY SOLD</h3>
+          <p><strong>16,000,000</strong></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>TOTAL SALES REVENUE</h3>
+          <p><strong>20,000,000</strong></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3>CUSTOMER DIRECTORY</h3>
+          <p><strong>80,000</strong></p>
+        </div>
+      </div>
+    </div>
+    <br/>
+
+    <div class="frame">
+      <div><h4>Top Recent Records</h4></div>
+      <div><h4>10V Enteries per page</h4></div>
+    </div>
+
+    <div style="overflow-x: auto">
+      <table id="employeeList">
+        <colgroup>
+          <col />
+          <col class="it" />
+          <col />
+          <col class="it" />
+        </colgroup>
+        <tr class="blue">
+          <th>Customer Name</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Amount</th>
+          <th colspan="2" class="edel"></th>
+        </tr>
+        <tbody class="work"></tbody>
+      </table>
+    </div>
+    <br/>
+    <button id="myBtn">Add Records</button>
+
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+    <form onsubmit="event.preventDefault();" autocomplete="off" class="form">
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h5>Please kindly edit your details properly here</h5>
+          </div>
+          <div class="modal-body">
+            <label for="email"><b>Customer Name</b></label>
+            <input type="text" class="cusname" name="cusname" required />
+
+            <label for="psw"><b>Quantity</b></label>
+            <input type="number" class="quantity" name="quantity" required />
+
+            <label for="psw-repeat"><b>Unit Price</b></label>
+            <input type="number" class="unit" name="unit" required />
+
+            <label for="psw-repeat"
+              ><b>Amount</b>
+              <input type="text" class="amount" name="amount" required />
+            </label>
+          </div>
+          <div class="modal-footer">
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="./js/real.js"></script>
+    <!--<script src="./js/land.js"></script>-->
+  </body>
+</html>
